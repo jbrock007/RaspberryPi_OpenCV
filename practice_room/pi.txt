@@ -1,0 +1,24 @@
+Username: sose2022groupa
+Password: T:JM7t9);u3rZ3v~
+
+piA:
+ssh sose2022groupa@emt15.rz.tu−ilmenau.de −p 4442
+
+. rod_env/bin/activate
+
+
+piB:
+ssh sose2022groupa@emt15.rz.tu−ilmenau.de −p 4441
+
+
+Run in raspberry pi:
+sudo systemctl restart app.service
+
+check Error
+sudo systemctl status app.service
+
+sudo journalctl −u app.service
+
+
+a) http://emt15.rz.tu-ilmenau.de:8082 for Raspberry Pi A
+b) http://emt15.rz.tu-ilmenau.de:8081 for Raspberry Pi B

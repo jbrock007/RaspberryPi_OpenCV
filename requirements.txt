@@ -1,0 +1,5 @@
+flask
+gunicorn
+greenlet
+gevent
+opencv-contrib-python

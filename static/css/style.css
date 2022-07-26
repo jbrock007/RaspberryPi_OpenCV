@@ -1,0 +1,109 @@
+
+body{
+
+  /* display: flex;
+  justify-content: center; */
+  background-image: url(https://thumbs.dreamstime.com/b/grey-background-design-wallpaper-grey-background-design-wallpaper-use-designs-text-image-layout-140472177.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  margin: auto;
+  width: 80%;
+  height: auto;
+  border: 1px solid  rgb(80, 74, 74);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  background-color: rgb(231, 231, 211);
+  font-size: large;
+  color:#3c484d;
+}
+img {
+  /* position: absolute; */
+  width: 80%;
+  border: grey 1px solid;
+  outline: none;
+  border-radius: 3%;
+}
+#streaming_viewer {
+  font-size: larger;
+  width: 100%;
+  align-items: center;
+  border-bottom: 2px grey dashed;
+  padding-bottom: 10px;
+  
+}
+#actions{
+  color: rgb(65, 64, 64);
+  font-size: large;
+  padding-left: 10%;
+}
+.btn-update {
+  border:none;
+  border-radius:1rem;
+   height:35px;
+  width:100px;
+    color:white;
+    background-color:#3c484d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#monitoring_info{
+  color: rgb(65, 64, 64);
+  padding-left: 10%;
+}
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+}
+.para{
+  font-size: medium;
+}
+h1{
+  font-size:larger !important;
+}
+@media only screen and (min-width: 1024px) {
+.container{
+  width: 80%;
+  height: auto;
+  border: 1px solid  rgb(80, 74, 74);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  background-color: rgb(231, 231, 211);
+  font-size: large;
+  color:#3c484d;
+}
+img {
+  width: 70%;
+  height: 50%;
+  border: grey 1px solid;
+  outline: none;
+  border-radius: 3%,0;
+}
+.btn-update {
+  height:40px;
+  width: 200px;
+  font-size: 25;
+}
+#streaming_viewer {
+  font-size: larger;
+  width: 100%;
+}
+#actions{
+  font-size: 30;
+  padding-left: 15%;
+}
+#monitoring_info{
+  height: 30%;
+  font-size: 30;
+  padding-left: 15%;
+}
+h1{
+  font-size:50 !important;
+}
+}
