@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Rod tracker</title>
+    <!-- {{ url_for('static', filename='css/style.css') }} -->
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='vendor/axios/axios.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <section id="streaming_viewer">
+        <h1 align="center">Rod Tracker</h1>
+        <img id="background" class="center" src="{{ url_for('video_feed') }}">
+      </section>
+      <hr>
+      <section id="actions">
+        <h2>Actions</h2>
+          <div>
+            <!-- Button to update the system's status -->
+            <button class = "btn-update" onclick="updateStatus()">Update status</button>
+
+            <!-- 'Start motor' button with corresponding request after clicking -->
+            <button class = "btn-update" onclick="requestStartMotor()">Start Motor</button>
+            <!-- ... -->
+            <button class = "btn-update" onclick="requestStopMotor()">Stop Motor</button>
+          </div>
+    </section>
+  </hr>
+    <section id="monitoring_info">
+      <h2>Monitoring information</h2>
+      <!-- HTML elements for 'Motor status' information -->
+      <!-- ... -->
+      <p class="para"><b>Motor Status:<span id="motor_status"></b>
+      <p class="para"><b>Distance:<span id="shape_distance"></b>
+      <!-- HTML elements for 'Current shape' information -->
+      <!-- ... -->
+      <p class="para"><b>Current shape from Open CV:</b>
+        <b>Triangle: </b><span id="triangle_open_cv"></span>,
+        <b>Square: </b><span id="square_open_cv"></span>,
+        <b>Circle: </b><span id="circle_open_cv"></span>
+      </p>
+      <p class="para"><b>Current shape from Distance :</b>
+        <b>Triangle: </b><span id="triangle_from_distance"></span>,
+        <b>Square: </b><span id="square_from_distance"></span>,
+        <b>Circle: </b><span id="circle_from_distance"></span>
+      </p>
+      <!-- HTML elements for 'Distance' information -->
+      <!-- ... -->
+
+
+    </section>
+  </div>
+  </body>
+</html>
